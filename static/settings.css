@@ -1,0 +1,68 @@
+#content-settings {
+    text-align: left;
+    flex: 1;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flag-item {
+    position: relative;
+    flex-grow: 1;
+    margin: 10px;
+    width: 10%;
+    cursor: pointer;
+
+}
+.flag-item img {
+    width: 100%;
+}
+
+.flag-desc {
+  position:absolute;
+  top: 5%;
+  text-align:center;
+  width:100%;
+  opacity:1;
+  visibility: hidden;
+  transition: opacity 1s linear;
+  font-size:1.5em;
+  color:#FFFFFF;
+  cursor: pointer; 
+}
+
+
+
+/* Animations */
+.flag-item:hover img {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    -webkit-filter:brightness(50%);
+    filter: brightness(50%);
+
+}
+
+.flag-item:hover .flag-desc {
+  visibility: visible;
+  opacity:1;
+}
+
+.flag-item {
+  overflow:hidden;
+  border: none;
+}
+img {
+  border: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+
+.selectedFlag {
+    border: 5px blue solid;
+}
+.selectedFlag img {
+    filter: brightness(50%);
+}

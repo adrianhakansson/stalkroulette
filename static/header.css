@@ -1,0 +1,58 @@
+html {
+    background-color: white;
+}
+body {
+    text-align: center;
+    font-family: Roboto;
+    margin: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 80%;
+    background-color: #efefef;
+}
+#banner {
+    height: 100px; 
+    background-color: black;   
+}
+#banner h1 {
+    float: left;
+    margin-top: 1em;
+    font-family: Lobster;
+    font-size: 3em;
+    color: white;
+}
+#nav {
+    text-align: center;
+    background-color: #4286f4;
+
+}
+#nav a {
+   padding: 10px 20px;
+   color: white;
+   text-decoration: none;
+}
+
+#nav a:hover { 
+    background-color: #1d427c;
+}
+
+.active {
+    background-color: #1d427c;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-device-width: 480px) {
+        body {
+            width: 100%;
+        }
+	}

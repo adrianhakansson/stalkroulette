@@ -1,0 +1,21 @@
+#content-contact {
+    text-align: left;
+    flex: 1;
+}
+#content-contact p {
+    margin: 1%;
+}
+#contact-form {
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1%;
+}
+input, textarea {
+    margin: 5px 0;
+}
+textarea {
+    height: 200px;
+    width: 90%;
+}
